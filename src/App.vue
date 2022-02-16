@@ -1,30 +1,46 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <TheHeader/>
+  <main>
   <router-view/>
+  </main>
+  <TheFooter/>
 </template>
 
+<script>
+import TheHeader from '@/components/TheHeader';
+import TheFooter from '@/components/TheFooter';
+export default {
+  components: {
+    TheHeader,
+    TheFooter
+  }
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+/*css reset*/ 
+
+* {
+  box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+body, ul, li, h1, h2, p {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+body{
+  font-family: "Montserrat", sans-serif;
+  background: peachpuff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
