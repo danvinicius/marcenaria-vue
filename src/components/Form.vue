@@ -15,7 +15,7 @@
               <label for="project" class="form-label mb-1">Conte-nos sobre seu projeto</label>
               <textarea class="form-control" name="project" id="project" v-model="project" cols="30" rows="5" placeholder="Digite sua mensagem" required></textarea>
               <small class="d-block mb-4">* Atendemos somente no estado do Rio de Janeiro</small>
-              <button class="btn btn-dark mb-5 mb-md-0">Solicitar orçamento</button>
+              <button type="submit" class="btn btn-dark mb-5 mb-md-0">Solicitar orçamento</button>
             </form>
           </div>
           <div class="col-12 col-md-5">
